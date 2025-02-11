@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #800080;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+#name{
+    display: inline-block;
+    margin: 3px;
+    font-size: 230%;
+}
+nav {
+    margin-top: 0px;
+    float:inline-end;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem ;
+}
+
+.nav-link {
+    display: inline;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.down-arrow {
+    transform: rotate(90deg);
+}
+
+main {
+    padding: 1rem;
+}
+/*page1*/
+.container {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    border-color: blue;
+}
+#line{
+    padding-left: 50px;
+}
+.question-mark {
+    font-size: 13em;
+    position: absolute;
+    left: 40%;
+    top:10%;
+    margin: 20px auto;
+}
+.hover-text {
+    position: absolute;
+    top: 37%; /* Adjust this to position the "Yes" text vertically */
+    left: 35%; /* Adjust this to position the "Yes" text horizontally */
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.question-mark:hover ~ .hover-text {
+    opacity: 1;
+}
+
+.text-container {
+    width: 50%;
+    border: 20px;
+}
+  
+.image-container {
+    width: 50%;
+    border: 20px;
+    left:50%;
+  }
+  
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+p {
+    margin-bottom: 10px;
+  }
+.contex{
+    position: absolute;
+    left:100px;
+    top:400px;
+    font-size: 25px;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* page 2 */
+.container2 {
+    display: flex;
+    max-width: 1500px;
+    background-color: white;
+}
+
+.image-section {
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.vertical-text {
+    position: absolute;
+    left: -100px; /* Adjust the position according to your need */
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 70px;
+    color: #5d5d5d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content {
+    padding-left: 200px; /* Adjust padding to make space for vertical text */
+}
+
+.content h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* page 3*/
+
+.services-section {
+    width: 50%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f5f5f5 30%, #d3c0b0 100%);
+}
+
+.service {
+    margin-bottom: 40px;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.service h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4C3F35;
+}
+
+.service p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.image-gallery {
+    width: 50%;
+    float: right;
+    background: #1d1c1b;
+    overflow: hidden;
+    padding-bottom: 40px; 
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide {
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;/* Hide overflow to create the sliding window effect */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide img {
+    padding-top: 80px;   
+    padding-right: 10px; 
+    width: 220px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slide:hover img {
+    transform: scale(3);
+}
+
+/* container-2 for image slider*/
+.image-slider2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide2 {
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;/* Hide overflow to create the sliding window effect */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide2 img {
+    padding-top: 80px;
+    padding-right: 10px; 
+    width: 220px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slide2:hover img {
+    transform: scale(3);
+}
+
+
+/* container-3 for image slider*/
+.image-slider3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide3 {
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;/* Hide overflow to create the sliding window effect */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide3 img {
+    padding-top: 80px;
+    padding-right: 10px; 
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slide3:hover img {
+    transform: scale(3);
+}
+
+/* container-4 for image slider*/
+.image-slider4 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide4 {
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;/* Hide overflow to create the sliding window effect */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slide4 img {
+    padding-top: 80px;
+    padding-right: 10px; 
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slide4:hover img {
+    transform: scale(1.5);
+}
